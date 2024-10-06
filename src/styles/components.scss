@@ -1,0 +1,282 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, 
+    #F07F3C 0%, 
+    #F1B846 19%, 
+    #FFBD64 44%, 
+    #FFD04F 100%);
+}
+
+.logo-icon {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.icons {
+  width: 35px;
+  height: 35px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.ijb-title {
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 0;
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bolder;
+  }
+  span {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+.dashboard-icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.dashboard-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-icon .icon {
+  font-size: 30px;
+}
+
+.dashboard-icon span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+}
+
+
+.partners {
+  margin: 100px 400px;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.custom-swiper {
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide-content {
+  position: absolute;
+  left: 80px;
+  color: white;
+  text-align: left;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .slide-button {
+    padding: 8px 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    border: none;
+    color: $dark;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: $secondary;
+  width: 40px;
+  height: 40px;
+  &:hover {
+    color: $tertiary;
+  }
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $secondary;
+}
+
+.scroll-section {
+  .left-image {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+
+    img {
+      margin-top: 30px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .left-content {
+    padding: 0;
+  }
+
+  .right-content {
+    padding: 0;
+  }
+
+  .content-block {
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    transform: translateY(50px);
+  }
+
+  .content{
+    color: $white;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    h1{
+      font-size: 32px;
+      padding: 0 40px;
+    }
+    p{
+      padding: 0 40px;
+      font-size: 20px;
+    }
+
+    &.bg-color-first{
+      background-color: $secondary;
+    }
+    &.bg-color-second{
+      background-color: $primary;
+    }
+    &.bg-color-third{
+      background-color: #D88065;
+    }
+  }
+}
+
+.login-container{
+  display: flex;
+  background-color: #fce4db;
+}
+
+.login-content{
+  display: flex;
+  height: 400px;
+}
+
+.login-title{
+  color: $primary;
+  font-weight: 550;
+  text-decoration: underline;
+}
+
+.forgot-password{
+  display:flex;
+  cursor: pointer;
+  justify-content: end;
+  font-size: 14px;
+}
+
+@import 'src/styles/Modal';
+@import 'src/styles/Storage';

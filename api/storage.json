@@ -1,0 +1,24 @@
+{
+  "materials": [
+    {
+      "id": "kR-0RJ",
+      "name": "Tijolo",
+      "quantity": 150,
+      "description": "unidades"
+    },
+    {
+      "id": "QQT_3A",
+      "name": "Cimento",
+      "quantity": 20,
+      "description": "pacotes"
+    }
+  ],
+  "products": [
+    {
+      "id": "cRhLDp",
+      "name": "Mármore",
+      "price": "R$229,90",
+      "description": "A venda"
+    }
+  ]
+}
